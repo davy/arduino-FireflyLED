@@ -8,15 +8,19 @@
 #include "FireflyLED.h"
 
 
-long blinkMillis = 0;
-long blinkInterval = 1000;
-int blinkState = LOW;
-bool enabled = false;
+long blinkMillis;
+long blinkInterval;
+int blinkState;
+bool enabled;
 
 //<<constructor>>
 FireflyLED::FireflyLED(uint8_t pin) {
  p = pin;
  pinMode(p, OUTPUT);
+ blinkMillis = 0;
+ blinkInterval = 1000;
+ blinkState = LOW;
+ enabled = false;
 }
 
 //<<destructor>>
