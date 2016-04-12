@@ -18,7 +18,7 @@ Then simply add this to the top of your file:
 #include <FireflyLED.h>
 
 // Create a new FireflyLED on pin 3
-FireflyLED led = FireflyLED(3)
+FireflyLED led = FireflyLED(3);
 
 void setup() {
   // turn firefly on
