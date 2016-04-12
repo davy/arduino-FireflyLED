@@ -35,6 +35,10 @@ void FireflyLED::off() {
   digitalWrite(p, 0);
 }
 
+void FireflyLED::setInterval(long interval) {
+  blinkInterval = interval;
+}
+
 bool FireflyLED::update() {
   if (enabled) {
 

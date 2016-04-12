@@ -25,6 +25,7 @@ public:
     ~FireflyLED();
     void on();
     void off();
+    void setInterval(long);
     bool update();
 };
 
