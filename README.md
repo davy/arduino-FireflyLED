@@ -1,5 +1,7 @@
 # Simulate Firefly Blinking Patterns
 
+This is a WIP
+
 This arduino library can let you easily simulate a variety of firefly blinking patterns with LEDs.
 
 ## Install
