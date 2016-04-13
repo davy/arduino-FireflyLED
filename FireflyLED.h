@@ -32,8 +32,11 @@ protected:
     enabled = false;
     blinkState = LOW;
   }
-  void writePin(int) {
+  void dWrite(int) {
     digitalWrite(_pin, blinkState);
+  }
+  void aWrite(int) {
+    analogWrite(_pin, blinkState);
   }
 };
 

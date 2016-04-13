@@ -52,7 +52,7 @@ void BlinkingFirefly::update(void) {
       else
           blinkState = LOW;
 
-      writePin(blinkState);
+      dWrite(blinkState);
     }
   }
 }
