@@ -2,7 +2,7 @@
  * BlinkingFirefly.h
  *
  *  Created on: April 12, 2016
- *      Author: davy 
+ *      Author: davy
  */
 
 #ifndef FireflyLED_H

@@ -2,7 +2,7 @@
  * BlinkingFirefly.cpp
  *
  *  Created on: April 12, 2016
- *      Author: davy 
+ *      Author: davy
  */
 
 #include "FireflyLED.h"

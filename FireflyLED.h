@@ -2,7 +2,7 @@
  * FireflyLED.h
  *
  *  Created on: May 15, 2015
- *      Author: davy 
+ *      Author: davy
  */
 
 #ifndef FireflyLED_H
