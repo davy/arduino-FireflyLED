@@ -18,7 +18,9 @@ And include any of the specific Fireflies you wish to use:
 
 ```
 #include <BlinkingFirefly.h>
-#include <FlickeringFirefly.h>  // requires FastLED library
+
+// requires FastLED library and PWM
+#include <FlickeringFirefly.h>
 ```
 
 ## Simple Example
