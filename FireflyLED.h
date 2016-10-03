@@ -2,7 +2,7 @@
  * FireflyLED.h
  *
  *  Created on: May 15, 2015
- *      Author: davy 
+ *      Author: davy
  */
 
 #ifndef FireflyLED_H
@@ -14,19 +14,30 @@
  #include <WProgram.h>
 #endif
 
-class FireflyLED {
-private:
-    uint8_t p;
-    long blinkMillis;
-    long blinkInterval;
-    int blinkState;
+class FireflyType {
 public:
-    FireflyLED(uint8_t pin=0);
-    ~FireflyLED();
-    void on();
-    void off();
-    void setInterval(long);
-    bool update();
+  virtual void update(void) = 0;
+  void setPin(uint8_t pin) {
+    _pin = pin;
+    // set pinMode
+    pinMode(_pin, OUTPUT);
+  }
+  void on()  { enabled = true; }
+  void off() { enabled = false; }
+protected:
+  uint8_t _pin;
+  bool enabled;
+  int blinkState;
+  void init() {
+    enabled = false;
+    blinkState = LOW;
+  }
+  void dWrite(int) {
+    digitalWrite(_pin, blinkState);
+  }
+  void aWrite(int) {
+    analogWrite(_pin, blinkState);
+  }
 };
 
 #endif
